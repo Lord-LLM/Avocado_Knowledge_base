@@ -207,7 +207,13 @@ if 'kb_initialized' not in st.session_state:
     
     st.session_state.kb_initialized = True
 
+# --- STREAMLIT UI ---
+st.set_page_config(page_title="Avocado Pest KB", page_icon="🥑", layout="wide")
+st.title("🥑 Avocado Pest & Disease Knowledge Base")
+st.write("An expert system using Datalog to find control methods for avocado cultivation.")
 
+# The rest of your Streamlit UI code goes here...
+# You can now use 'pest(Pest)' and 'find_pest_control(Pest, Chemical)' directly.
 
 # --- STREAMLIT UI ---
 st.set_page_config(page_title="Avocado Pest KB", page_icon="🥑", layout="wide")
